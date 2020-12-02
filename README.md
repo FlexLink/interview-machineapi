@@ -9,7 +9,7 @@ in Go or Java to access our simulated [machine data API](./api/swagger.yaml) ser
 - Add documentation to your code
 - You need to implement the `Add`, `Get`, `List` and `Remove` operations on the `machine` resource. You should support paging for `List` as well.
 - Don't forget to write human-readable tests to get the quality level you would expect in production. 
-- Please, do some debugging and workaround first, before reaching out for help, in case you see any problems running the machineapi or Docker compose. Try to find a solution if something is wrong. 
+- Please, reach out for help in case you have any problem/question (contact: Andrei Petelin, andrei.petelin@flexlink.com).
 
 ### What NOT to do
 - Don't use a rest api library for your client. Test libraries are OK.
