@@ -2,9 +2,11 @@ version: '3'
 
 services:
   machineapi:
-    container_name: machine_api
+    container_name: machineapi
     image: flsi/machine-api:1.1
     restart: on-failure
+    networks:
+      - flexlink
     depends_on:
       - mongodb
     environment:
@@ -35,6 +37,23 @@ services:
       - flexlink
     restart: always
     command: 'mongod --bind_ip 0.0.0.0'
+
+# ----------------------------------------------------------
+# EXAMPLE, MODIFY THIS SECTION FOR YOUR TEST
+# ----------------------------------------------------------
+#  machineapi_test_client:
+#    container_name: ...
+#    image: ...
+#    working_dir: ...
+#    environment:
+#      MACHINE_API_URI: 'http://machineapi:8115'
+#    volumes:
+#      - ...
+#    networks:
+#      - flexlink
+#    depends_on:
+#      - ...
+#    command: '...'
 
 networks:
   flexlink:
