@@ -16,6 +16,7 @@ in Go or Java to access our simulated [machine data API](./api/swagger.yaml) ser
 - Don't use a code generation
 
 ### Docker
+ - If you are not familiar with Docker, skip this section
  - Modify the existing docker-compose.yaml file, add your section
  - We will check your work by running `docker-compose up` and looking at your tests running the client connecting to provided machine API service. 
  - Machine API service simulate unstable behavior sometimes as a real service in Web. 
@@ -23,7 +24,8 @@ in Go or Java to access our simulated [machine data API](./api/swagger.yaml) ser
  
 ## How to submit your exercise
 - Include your name in the README 
-- Create a private repository on GitHub, copy the `docker-compose.yaml` from this repository
+- Create a private repository on GitHub
+- Copy the `docker-compose.yaml` from this repository. Skip this step,  if you are not familiar with Docker
 - Add @flexlink-code-review as a collaborator to your private repository in repo Settings / Manage access
 - Please inform our recruitment team you have completed the exercise
 
